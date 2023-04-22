@@ -28,6 +28,19 @@ local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/Bla
 print(HWIDTable)
 for i,v in pairs(HWIDTable) do
 	if v == HardID then
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+function Welcomemessage(title, text, timee)
+	task.spawn(function()
+		local notif = Instance.new("Sound");notif.Parent = game.SoundService;notif.SoundId = "rbxassetid://4590657391";notif.Volume = 5;notif:Play();notif.Stopped:Wait();notif:Destroy()
+	end)
+	Notification:Notify(
+		{Title = title, Description = text},
+		{OutlineColor = Color3.fromRGB(80, 80, 80),Time = timee or 5, Type = "image"},
+		{Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
+	)
+end
+Welcomemessage("Ware Hub", "Hello Am Bacon ARWE#1055 is Scripts Make By Me . Thank To Use :D", 10)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/LoadUI/main/Start"),true)()
 	end
 end
