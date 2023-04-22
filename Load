@@ -1,0 +1,33 @@
+local client = identifyexecutor()
+local player = game.Players.LocalPlayer
+local HardID = game:GetService("RbxAnalyticsService"):GetClientId()
+local PlaceId = game.PlaceId
+
+local ismobile = game:GetService("UserInputService").TouchEnabled
+local ispc = game:GetService("UserInputService").KeyboardEnabled
+
+print()
+print()
+print()
+task.wait(1)
+print(" Name : "..player.name.." ")
+print(" Display Name : "..player.DisplayName.." ")
+task.wait(2)
+print(" Execute : "..client.." ")
+if ismobile then
+	print("Device : Moblie")
+elseif ispc then
+	print("Device : Pc")
+end
+task.wait(1.54)
+
+print(" Place Id : "..PlaceId.." ")
+print(" Hardware Id : "..HardID.." ")
+
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/BaconError/main/Return"),true)()
+print(HWIDTable)
+for i,v in pairs(HWIDTable) do
+	if v == HardID then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/LoadUI/main/Start"),true)()
+	end
+end
