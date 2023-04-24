@@ -32,11 +32,8 @@ task.wait(0.54)
 
 print(" Place Id : "..PlaceId.." ")
 print(" Hardware Id : "..HardID.." ")
-task.wait(0.1)
-local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/BaconError/main/Return"),true)()
-print(HWIDTable)
-for i,v in pairs(HWIDTable) do
-	if v == HardID then
+task.wait(1)
+
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 function Welcomemessage(title, text, timee)
@@ -52,7 +49,7 @@ end
 Welcomemessage("Ware Hub", "Hello Am Bacon ARWE#1055 is Scripts Make By Me . Thank To Use :D", 10)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/LoadUI/main/Start"),true)()
 	end
-end
+task.wait(0.1)
 print()
 print()
 print()
