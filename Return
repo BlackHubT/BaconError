@@ -1,1 +1,5 @@
+local queueonteleport = syn and syn.queue_on_teleport or local queue_on_teleport
 
+if queueonteleport then
+	queueonteleport(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/BaconError/main/Load"))
+end
