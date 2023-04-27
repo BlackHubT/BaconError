@@ -1,5 +1,3 @@
-local queueonteleport = queue_on_teleport
-
 local client = identifyexecutor()
 local player = game.Players.LocalPlayer
 local HardID = game:GetService("RbxAnalyticsService"):GetClientId()
@@ -38,6 +36,3 @@ function Welcomemessage(title, text, timee)
 end
 Welcomemessage("Ware Hub", "Hello Am Bacon ARWE#1055 is Scripts Make By Me . Thank To Use :D", 10)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/LoadUI/main/Start"),true)()
-if queueonteleport then
-	queueonteleport(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/BaconError/main/Load"))
-end
