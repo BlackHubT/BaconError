@@ -1,5 +1,4 @@
-local queueonteleport = syn and syn.queue_on_teleport or queue_on_teleport 
-if queueonteleport then queueonteleport(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/BaconError/main/Load"),true)() end
+local queueonteleport = queue_on_teleport
 
 local client = identifyexecutor()
 local player = game.Players.LocalPlayer
@@ -9,11 +8,6 @@ local PlaceId = game.PlaceId
 local ismobile = game:GetService("UserInputService").TouchEnabled
 local ispc = game:GetService("UserInputService").KeyboardEnabled
 
-print()
-print()
-print()
-print()
-print()
 task.wait(0.5)
 print(" Name : "..player.name.." ")
 print(" Display Name : "..player.DisplayName.." ")
@@ -44,3 +38,6 @@ function Welcomemessage(title, text, timee)
 end
 Welcomemessage("Ware Hub", "Hello Am Bacon ARWE#1055 is Scripts Make By Me . Thank To Use :D", 10)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/LoadUI/main/Start"),true)()
+if queueonteleport then
+	queueonteleport(game:HttpGet("https://raw.githubusercontent.com/BlackHubT/BaconError/main/Load"))
+end
